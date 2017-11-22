@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+<meta charset="UTF-8">  
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>Alan Jones - Provincia, Departamento, Distrito, Region Search</title>
+<script src="lib/angular/angular.min.js"></script>
+<script src="lib/angular/angular-route.min.js"></script>
+
+  <script src="js/app.js"></script>
+  <script src="js/controllers.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="myFunction()" style="margin:0;">
+  <div id="loader"></div>
+    <div style="display:none;" id="mainContainer" class="animate-bottom">
+      <div class="round2logo">
+        <a href="http://jonesfrontendwebdev.com/">
+              <img src="http://jonesfrontendwebdev.com/wp-content/uploads/2016/05/cropped-smalllogo.png" alt="Alan Jones ">
+        </a>
+      </div> 
+      <!--ng-view Let's Angular know app will be controlled by different snippets on partial files. -->
+      <div class="main" ng-view></div>     
+    </div>
+  <!--For Loader -->
+  <script>
+      var myVar;
+
+      function myFunction() {
+          myVar = setTimeout(showPage, 3000);
+      }
+
+      function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("mainContainer").style.display = "block";
+      }
+  </script>
+</body>
+</html>

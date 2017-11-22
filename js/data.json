@@ -1,0 +1,71 @@
+[
+  {
+    "name":"Cercado de Lima",
+    "distrito":"Lima 01",
+    "departamento":"Lima Metropolitana",
+    "region":"Costa"  
+  },
+  {
+    "name":"San Isidro",
+    "distrito":"Lima 27",
+    "departamento":"Lima Metropolitana",
+    "region":"Costa"
+      
+  },
+  {
+    "name":"Miraflores",
+    "distrito":"Lima 18",
+    "departamento":"Lima Metropolitana",
+    "region":"Costa"
+      
+  },
+  {
+    "name":"Santiago de Surco",
+    "distrito":"Lima 33",
+    "departamento":"Lima Metropolitana",
+    "region":"Costa"
+      
+  },
+  {
+    "name":"La Molina",
+    "distrito":"Lima 12",
+    "departamento":"Lima Metropolitana",
+    "region":"Costa"
+    
+  },
+  {
+    "name":"Barranco",
+    "distrito":"Lima 04",
+    "departamento":"Lima Metropolitana",
+    "region":"Costa"
+    
+    
+  },
+  {
+    "name":"Huanuco",
+    "distrito":"10",
+    "departamento":"Huanuco",
+    "region":"Sierra"
+    
+    
+  },
+  {
+    "name":"Ucayali",
+    "distrito":"25",
+    "departamento":"Pucalpa",
+    "region":"Selva"    
+  },
+  {
+    "name":"Iquitos",
+    "distrito":"16",
+    "departamento":"Loreto",
+    "region":"Selva"  
+  },
+  {
+    "name":"Caraveli",
+    "distrito":"04740",
+    "departamento":"Arequipa",
+    "region":"Sierra"  
+  }
+
+]

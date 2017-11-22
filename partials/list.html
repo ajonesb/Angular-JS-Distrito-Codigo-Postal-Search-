@@ -1,0 +1,40 @@
+<section class="distritopage">
+  <div class="search">
+        <h1>Distrito, Codigo Postal, Provincia, Region Search</h1>
+        <p> Please search for your district, postal code, province on the search input and results will be shown below.</p>
+        <p style="color: orange;">You can also do a search based on Peru region (Costa, Sierra, Selva).</p>
+
+        <label>Buscar: </label>
+        <!--Creates a model, calling it query -->
+        <input ng-model="query" placeholder="Buscar aqui" autofocus>
+        <label class="formgroup">Agrupar por:
+          <select ng-model="distritoOrder"> 
+          <!--filter created below with angular orderBy filter to order the distritos -->
+          <!-- Values below must match information on json file-->
+          <option value="name">Nombre</option>
+          <option value="distrito">Distrito</option>
+          <option value="departamento">Departamento</option>
+          <option value="region">Region</option>
+          </select>
+        </label> 
+        <!-- <label class="formgroup">
+          <input type="radio" ng-model="direction" name="direction" checked> --> <!--ng-model=direction, this is how the filter works. --><!-- ascending
+         </label>
+        <label class="formgroup">
+          <input type="radio" ng-model="direction" name="direction" value="reverse">
+          descending
+        </label>  -->
+      </div>
+  <ul class="distritolist">
+  <!--add filter:query angular filter below  and orderBy which created above called distritoOrder-->
+  <!--ng-repeat to loop through json file to bring that data in -->
+    <li class="distrito cf" ng-repeat="item in distritos | filter: query | orderBy: distritoOrder:direction"> <!--distritooder:direction is sub filter created to work for both input fields-->
+      <!-- <img ng-src="images/{{item.shortname}}_tn.jpg" alt="Photo of {{item.name}}">  -->
+      <div class="info">
+        <h2>{{item.name}}</h2>
+        <h3>{{item.distrito}}</h3>
+        <h4>{{item.departamento}}</h4>
+      </div>
+    </li>
+  </ul>
+</section>
